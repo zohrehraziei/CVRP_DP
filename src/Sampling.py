@@ -28,7 +28,7 @@ dist = distance_matrix([[0,0], [6,10], [4,8.5], [7,5]],
                        [[0,0], [6,10], [4,8.5], [7,5]])
 import numpy as np
 #incident matrix show the dispruption between arcs (except from depot)
-incident = np.random.rand(4,4)
+incident = np.random.rand(3,3)
 
 class INPUT:
     def __init__(self):
