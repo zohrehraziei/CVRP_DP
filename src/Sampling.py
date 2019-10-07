@@ -13,19 +13,19 @@ import time
 
 
 #number of nodes:
-Nodes = 4
+Nodes = 3
 
 #demand and values satisfying demand of each node
-demand = [14 , 8, 13, 7]
-values = [4, 9, 16, 5]
+demand = [14, 13, 7]
+values = [4, 16, 5]
 
 #capacity of vehicle
 capacity = 25
 
 #distance matrix 
 from scipy.spatial import distance_matrix
-dist = distance_matrix([[0,0], [6,10], [4,8.5], [5,9], [7,5]],
-                       [[0,0], [6,10], [4,8.5], [5,9], [7,5]])
+dist = distance_matrix([[0,0], [6,10], [4,8.5], [7,5]],
+                       [[0,0], [6,10], [4,8.5], [7,5]])
 import numpy as np
 #incident matrix show the dispruption between arcs (except from depot)
 incident = np.random.rand(4,4)
@@ -33,16 +33,16 @@ incident = np.random.rand(4,4)
 class INPUT:
     def __init__(self):
         #number of nodes:
-        self.nodes = 4
+        self.nodes = 3
         #demand and values satisfying demand of each node
-        self.demand = [14, 8, 13, 7]
-        self.values = [4, 9, 14, 5]
+        self.demand = [14, 13, 7]
+        self.values = [4, 16, 5]
         #capacity of vehicle
         self.capacity = 25
         #nodes locations 
-        self.point_pos = [[0,0], [6,10], [4,8.5], [5,9], [7,5]]
+        self.point_pos = [[0,0], [6,10], [4,8.5], [7,5]]
         #incident matrix show the dispruption between arcs (except from depot)
-        self.incident = np.random.rand(4,4)
+        self.incident = np.random.rand(3,3)
         
         
 data = INPUT()
