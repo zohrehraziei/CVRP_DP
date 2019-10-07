@@ -16,11 +16,11 @@ import time
 Nodes = 3
 
 #demand and values satisfying demand of each node
-demand = [14, 13, 7]
-values = [4, 16, 5]
+demand = [2, 3, 1]
+values = [6, 16, 3]
 
 #capacity of vehicle
-capacity = 25
+capacity = 5
 
 #distance matrix 
 from scipy.spatial import distance_matrix
@@ -35,10 +35,10 @@ class INPUT:
         #number of nodes:
         self.nodes = 3
         #demand and values satisfying demand of each node
-        self.demand = [14, 13, 7]
-        self.values = [4, 16, 5]
+        self.demand = [2, 3, 1]
+        self.values = [6, 16, 3]
         #capacity of vehicle
-        self.capacity = 25
+        self.capacity = 5
         #nodes locations 
         self.point_pos = [[0,0], [6,10], [4,8.5], [7,5]]
         #incident matrix show the dispruption between arcs (except from depot)
