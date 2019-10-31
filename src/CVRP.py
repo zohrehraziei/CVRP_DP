@@ -52,7 +52,7 @@ class  CVRPDP:
                     if rnd.random() > self.incident[self.states[i][1]-1][j-1]:
                         # consider disruption as a noise
                         
-                        distt += 10*rnd.random()
+                        distt += 18*rnd.random()
                     table[i,j] = max(table[i,j-1], 
                          table[self.states.index((self.states[i][0] - deliv,self.states[i][1]))][j-1] + val - distt)
          

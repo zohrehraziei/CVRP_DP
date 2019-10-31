@@ -17,7 +17,7 @@ Nodes = 6
 
 #demand and values satisfying demand of each node
 demand = [14 , 8, 5, 7, 12, 6]
-values = [8, 10, 13, 8, 16, 3]
+values = [8, 10, 13, 8, 9, 3]
 
 #capacity of vehicle
 capacity = 23
@@ -26,6 +26,7 @@ capacity = 23
 from scipy.spatial import distance_matrix
 dist = distance_matrix([[0,0],[0,2],[3,2.5],[4,10],[1,3], [5, 11], [1,3]],
                        [[0,0],[0,2],[3,2.5],[4,10],[1,3], [5, 11], [1,3]])
+
 import numpy as np
 #incident matrix show the dispruption between arcs (except from depot)
 incident = np.random.rand(6,6)
@@ -36,7 +37,7 @@ class INPUT:
         self.nodes = 6 
         #demand and values satisfying demand of each node
         self.demand = [14 , 8, 5, 7, 12, 6]
-        self.values = [14 , 8, 5, 7, 12, 6]
+        self.values = [8, 10, 13, 8, 9, 3]
         #capacity of vehicle
         self.capacity = 23
         #nodes locations 
