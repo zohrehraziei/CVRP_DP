@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 import time
 
 
+
 #number of nodes:
 Nodes = 6
 
