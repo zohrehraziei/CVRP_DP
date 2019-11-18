@@ -4,7 +4,7 @@ Created on Tue Apr 30 09:09:00 2019
 
 experim - CVRPDP
 
-Author: Zohreh Raziei - zraziei@smu.edu
+Author: Zohreh Raziei - zohrehraziei@smu.edu
 """
 from __future__ import division
 from CVRP import CVRPDP
