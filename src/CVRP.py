@@ -4,7 +4,7 @@ Created on Tue Apr 30 09:09:00 2019
 
 CVRP (DP)
 
-Author: Zohreh Raziei - zraziei@smu.edus
+Author: Zohreh Raziei - raziei.z@husky.neu.edu
 """
 
 from scipy.spatial import distance_matrix
