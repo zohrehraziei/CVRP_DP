@@ -31,4 +31,3 @@ To use this script, you will need to:
 data = INPUT()
 ans = CVRPDP(data)
 print(ans.DP())
- 
