@@ -11,8 +11,6 @@ from CVRP import CVRPDP
 import matplotlib.pyplot as plt 
 import time
 
-
-
 #number of nodes:
 Nodes = 6
 
@@ -45,9 +43,7 @@ class INPUT:
         self.point_pos = [[0,0],[0,2],[3,2.5],[4,10],[1,3], [5, 11], [1,3]]
         #incident matrix show the dispruption between arcs (except from depot)
         self.incident = np.random.rand(6,6)
-        
-        
-        
+          
 data = INPUT()
 ans = CVRPDP(data)
 #print(ans.DP())
@@ -71,6 +67,4 @@ plt.show()
     
 
 print(est_sol1)  
-print(t2 - t1) 
-        
-        
+print(t2 - t1)
